@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="../../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- style css -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- Box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Swiper js -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+
+    
+     <title>Furniture web-site</title>
+</head>
+<body class="bg-white">
+
+    <section class="heading">
+        <nav class="container container-sm d-flex align-items-center justify-content-between navbar ">
+            <p class="fs-1 fw-bold ps-3 ps-md-0">Panto</p>
+            <ul class="nav d-none d-md-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active  d-flex align-items-center    " href="">Furniture 
+                        <i class='bx bx-chevron-down' style='color:#f5f1f1'  ></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+            </ul>
+
+            <div class="icons d-flex">
+                <span class="d-none d-md-flex">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z" fill="white"/>
+                    </svg>
+                </span>
+                <span class="fs-2 d-flex d-md-none pe-3 menu-icon" onclick="openhandler()">
+                    <i class='bx bx-menu' style='color:#f5f1f1' ></i>
+                </span>
+            </div>
+
+            <div class="nav mobile-nav w-50 bg-dark d-md-none">
+                <p class="fs-1 fw-bold ps-3 ps-md-0 text-center w-100 border-bottom border-secondary py-2">Panto</p>
+                <ul class="nav w-100 h-100 d-flex gap-3 justify-content-start align-items-center flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active  d-flex align-items-center " href="">Furniture 
+                            <i class='bx bx-chevron-down' style='color:#f5f1f1'  ></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Bag 
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+                
+        </nav>
+
+        <!-- Header section -->
+        <section class="header d-flex align-items-center flex-column gap-3 h-100 justify-content-start">
+            <button class="blur-box btn1">
+                <div class="d-flex div1">
+                    <span class="span1">
+                        <p class="back-blue fs-6">D</p>
+                    </span>
+                    <span class="span2">
+                        <p class="back-brown fs-6">M</p>
+                    </span>
+                </div>
+            </button> 
+            <h1 class="header-text">Make your interior more minimalistic & modern</h1>
+            <p class="subheader">Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+            <form action="" class="search">
+                <input class="blur-box search-box" type="text" placeholder="Search furniture">
+                <button class="btn btn-search"><i class='bx bx-search' style='color:#ffffff'  ></i></button>
+            </form>
+            
+        </section>
+
+    </section>
+
+
+    <section class="custom-container">
+        <div class="about-us row">
+            <div class="cols col-md-6 col-lg-3 col-sm-12 justify-content-center align-items-center">
+                <p class="fs-1 fw-bold w-75">Why Choosing Us</p>
+            </div>
+            <div class="cols flex-column col-md-6 col-lg-3 col-sm-12">
+                <p class="fs-3 fw-bold">Luxury facilities</p>
+                <p class="fs-6">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                <span>
+                    <a href="">More info</a>
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 12.4002H42M42 12.4002C42 12.4002 37.5119 9.44867 36.6 7.00024M42 12.4002C42 12.4002 38.0324 15.1736 36.6 17.8002" stroke="#E58411" stroke-linecap="square"/>
+                    </svg>    
+                </span>
+            </div>
+            <div class="cols flex-column col-md-6 col-lg-3 col-sm-12">
+                <p class="fs-3 fw-bold">Affordable Price</p>
+                <p class="fs-6">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+                <span>
+                    <a href="">More info</a>
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 12.4002H42M42 12.4002C42 12.4002 37.5119 9.44867 36.6 7.00024M42 12.4002C42 12.4002 38.0324 15.1736 36.6 17.8002" stroke="#E58411" stroke-linecap="square"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="cols flex-column col-md-6 col-lg-3 col-sm-12">
+                <p class="fs-3 fw-bold">Many Choices</p>
+                <p class="fs-6">We provide many unique work space choices so that you can choose the workspace to your liking.</p>
+                <span>
+                    <a href="">More info</a>
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 12.4002H42M42 12.4002C42 12.4002 37.5119 9.44867 36.6 7.00024M42 12.4002C42 12.4002 38.0324 15.1736 36.6 17.8002" stroke="#E58411" stroke-linecap="square"/>
+                    </svg>    
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sect3 d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-center py-4">Best Selling Product</h1>    
+        <ul class="types row">
+            <li class="col active">Chair</li>
+            <li class="col">Beds</li>
+            <li class="col">Sofa</li>
+            <li class="col">Lamp</li>
+        </ul>
+
+        <div class="swiper mySwiper mt-5">
+            <div class="chairs swiper-wrapper pb-5">
+                <!-- swiper item -->
+                <div class="slider-item swiper-slide">
+                    <div class="top">
+                        <img src="./images/chair1.png" alt="">
+                    </div>
+                    <div class="bottom info">
+                        <p class="fs-5 text-dark">Chair</p>
+                        <p class="fs-3 ps-3 fw-bold">Sakarias Armchair</p>
+                        <div class="stars d-flex">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <p>$ 392</p>  
+                    </div>
+                </div> 
+                <!-- swiper item -->
+                <div class="slider-item swiper-slide">
+                    <div class="top">
+                        <img src="./images/chair1.png" alt="">
+                    </div>
+                    <div class="bottom info">
+                        <p class="fs-5 text-dark">Chair</p>
+                        <p class="fs-3 ps-3 fw-bold">Sakarias Armchair</p>
+                        <div class="stars d-flex">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <p>$ 392</p>  
+                    </div>
+                </div> 
+                <!-- swiper item -->
+                <div class="slider-item swiper-slide">
+                    <div class="top">
+                        <img src="./images/chair1.png" alt="">
+                    </div>
+                    <div class="bottom info">
+                        <p class="fs-5 text-dark">Chair</p>
+                        <p class="fs-3 ps-3 fw-bold">Sakarias Armchair</p>
+                        <div class="stars d-flex">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <p>$ 392</p>  
+                    </div>
+                </div> 
+                <!-- swiper item -->
+                <div class="slider-item swiper-slide">
+                    <div class="top">
+                        <img src="./images/chair1.png" alt="">
+                    </div>
+                    <div class="bottom info">
+                        <p class="fs-5 text-dark">Chair</p>
+                        <p class="fs-3 ps-3 fw-bold">Sakarias Armchair</p>
+                        <div class="stars d-flex">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <p>$ 392</p>  
+                    </div>
+                </div> 
+                <!-- swiper item -->
+                <div class="slider-item swiper-slide">
+                    <div class="top">
+                        <img src="./images/chair1.png" alt="">
+                    </div>
+                    <div class="bottom info">
+                        <p class="fs-5 text-dark">Chair</p>
+                        <p class="fs-3 ps-3 fw-bold">Sakarias Armchair</p>
+                        <div class="stars d-flex">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <p>$ 392</p>  
+                    </div>
+                </div> 
+            </div>
+            <div class="swiper-pagination"></div>   
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+    </section>
+
+
+    <section class="experience d-flex align-items-center">
+        <div class="row w-100">
+            <div class="col-md-6 col-sem-12 d-flex align-items-center">
+                <div class="image-box">
+                    <img src="./images/experiences-image.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sem-12">
+                <h1 class="fs-1 fw-bold">Experience our workplace</h1>
+                <p class="fs-4">You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
+                
+            </div>
+        </div>
+    </section>
+    
+
+
+   <script src="../../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const openhandler = () => {
+            mobileNav.classList.toggle('open-mobile-nav')
+        }
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        
+
+    </script>
+
+
+</body>
+</html>

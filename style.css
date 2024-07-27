@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --orange-color: #E58411 ;
+    --secondary-color: #EEEEEE;
+    --light-gray-bg: #FAFAFA;
+    --dark-blue: #0D1B39;
+    --text-color: #1E1E1E;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif,;
+}
+
+.heading{
+    background-image: url(./images/bg.png);
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    color: white;
+}
+
+.heading a{
+    color: white;
+    transition: color 300 ease;
+}
+
+.heading a:hover{
+    color: var(--secondary-color);
+}
+
+.navbar{
+    height: 100px;
+}
+
+.mobile-nav{
+    height: 70vh;
+    position: absolute;
+    top: -70vh;
+    right: 0%;
+    display: none;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.open-mobile-nav{
+    right: 0;
+    top: 70px;
+    display: block;
+    opacity: 1;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease;
+}
+
+
+@media screen and (max-width:560px){
+    .navbar{
+        height: 70px;   
+    }
+}
+
+.header{
+    padding: 5% 15%;
+    position: relative;
+}
+
+.header-text{
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.btn1 {
+    width: 50px;
+    height: 35px;
+    font-size: 10px;
+    color: white;
+    right: 75%;
+    position: absolute;
+    top: 20%;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.div1 {
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 10%; /* Определение top для позиционирования */
+}
+
+.back-blue{
+    width: 30px;
+    background: blue;
+    border-radius:50%;
+}
+
+.span1{
+    width: 100px;
+}
+
+.back-brown{
+    background: brown;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+.subheader{
+    font-weight: 200;
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-align: center;
+    padding: 0 25%;
+}
+
+.search{
+    position: relative;
+}
+
+input{
+    height: 50px;
+    width: 344px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.blur-box{
+    padding: 8px 8px 8px 20px;
+    border: 0.8px solid var(--secondary-color);
+    background: rgba(56, 54, 54, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.search-box{
+    border-radius: 50px;
+}
+
+
+/*basqanda qara liniya bolmaw ushin  */
+input:focus{
+    outline: 0;
+}
+
+::placeholder{
+    color: white;
+    font-weight: 300;
+}
+
+.btn-search{
+    position: absolute;
+    padding: 8px;
+    background: var(--orange-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+    top: 5px;
+}
+
+.about-us .cols{
+    display: flex;
+    padding: 15px;
+}
+
+.about-us .cols a{
+    color: var(--orange-color);
+    text-decoration: none;
+}
+
+.custom-container{
+    padding: 7% 3%;
+}
+
+.sect3{
+    background: var(--light-gray-bg);
+    padding: 0 5%;
+}
+
+.chairs{
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.chair{
+    box-shadow: 0 0 20px -10px rgba(27, 26, 26,0.1);
+    padding: 0;
+    border-radius: 30px;
+}
+
+.info{
+    background: white;
+}
+
+.sect3 .types{
+    width: 346px;
+    height: 57px;
+    margin: 0 auto;
+    background-color: #ede4e4;
+    border-radius: 45px;
+    padding: 5px;
+}
+
+
+.types li{
+    /* background: green; */
+    border-radius: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.types li:active{
+    background-color: white;
+}
+
+.types li:hover{
+    background-color: white;
+    transition: all 1s ease;
+
+}
+
+.stars{
+    width: 10%;
+}
+
+.top{
+    background-color: var(--light-gray-bg);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.top img{
+    transform: translateY(-50px);
+    width: 217px;
+    height: 255px;
+}
+
+.top::before{
+    content: '';
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 25%;
+    background-image: url(./shadow.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.chair:nth-child(4) .top::before{
+    content: '';
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 23%;
+    left: 23%;
+    background-image: url(./shadow.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.info{
+    border-radius: 0 0 30px 30px;
+    padding: 20px;
+}
+
+.chair{
+    width: 268px;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}   
+
+.experience{
+    height: 700px;
+    padding: 0 5%;
+}
+
+.image-box{
+    position: relative;
+    width: 80%;
+    transform: translateX(-100px);
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-box::before{
+    content: '';
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: -1;
+    background-image: url(./images/experiences-image.png);
+    background-size: cover;
+    filter: blur(24px);
+}
