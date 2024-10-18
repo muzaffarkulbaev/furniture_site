@@ -490,15 +490,6 @@ input:focus{
         height: 0px;
     }
     
-    .materials-image .left-images img {
-        width: 120px; /* Уменьшаем ширину первого изображения */
-        height: auto; /* Автоматическая высота для сохранения пропорций */
-    }
-
-    .materials-image .left-images img:last-child {
-        width: 220px; /* Уменьшаем ширину второго изображения */
-        height: auto; /* Автоматическая высота для сохранения пропорций */
-    }
 
     .tesim-images{
         display: flex;
@@ -558,13 +549,13 @@ input:focus{
         height: 0px;
     }
 
-    .materials-image .left-images img {
-        width: 120px; /* Уменьшаем ширину первого изображения */
+    .materials-image .left-images img:first-child {
+        width: 180px; /* Уменьшаем ширину первого изображения */
         height: auto; /* Автоматическая высота для сохранения пропорций */
     }
 
     .materials-image .left-images img:last-child {
-        width: 220px; /* Уменьшаем ширину второго изображения */
+        width: 200px; /* Уменьшаем ширину второго изображения */
         height: auto; /* Автоматическая высота для сохранения пропорций */
     }
 
